@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BugHound</title>
+    <style>
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        display:block;
+        padding: 10px;
+        align-content: center ;
+        margin-bottom: 5px;
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+      }
+
+      a {
+        color: #000;
+        text-decoration: double;
+      }
+
+      a:hover {
+        color: blue;
+        text-decoration: underline;
+      }
+
+      body {
+        background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <h1 >Select an Option</h1>
+
+    <ul>
+        <li><a href="{{ url_for('show_employees') }}">Show Employees</a></li>
+      <li><a href="{{ url_for('show_programs') }}">Show Programs</a></li>
+      <li><a href="{{ url_for('show_bugs') }}">Show Bugs</a></li>
+      <li><a href="{{ url_for('show_areas') }}">Show Areas</a></li>
+      <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+    </ul>
+  </body>
+</html>

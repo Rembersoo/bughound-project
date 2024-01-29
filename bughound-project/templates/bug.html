@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BugHound</title>
+    <style>
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        display:block;
+        padding: 10px;
+        align-content: center ;
+        margin-bottom: 5px;
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+      }
+
+      a {
+        color: #000;
+        text-decoration: double;
+      }
+
+      a:hover {
+        color: blue;
+        text-decoration: underline;
+      }
+
+      body {
+        background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <h1 >Bug Menu</h1>
+
+    <ul>
+      <li><a href="{{ url_for('add_bug_form') }}">Add</a></li>
+      <li><a href="{{ url_for('update_bug_form') }}">Update</a></li>
+      <li><a href="{{ url_for('close_bug_form') }}">Close</a></li>
+      <li><a href="{{ url_for('search_bug_form') }}">Search</a></li>
+      <li><a href="{{ url_for('show_bugs') }}">Show</a></li>
+    </ul>
+  </body>
+</html>
